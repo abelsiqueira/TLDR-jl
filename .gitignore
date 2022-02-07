@@ -1,5 +1,0 @@
-node_modules
-css
-
-# data.json should be downloaded using get-data.sh during deployment
-data.json
