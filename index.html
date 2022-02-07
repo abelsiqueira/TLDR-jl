@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Julia TLDR.jl</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.5.3"></script>
+    <script type="text/javascript" src="data.json" async></script>
+    <script type="text/javascript" src="js/search.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" async></script>
+    <script src="https://kit.fontawesome.com/d17d5e5245.js" crossorigin="anonymous" async></script>
+  </head>
+
+  <body class="has-background-white">
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">TLDR.jl</h1>
+          <p class="content">
+            Snippets of Julia code and short explanations.
+            You can add the package and use it locally too.
+          </p>
+          <input id="search-input" class="input" type="text" placeholder="Start writing">
+
+          <div class="is-size-5 control mt-5 mb-0">
+            <label class="radio">
+              <input type="radio" name="radio-kind" value="snippet" checked>
+              Snippet
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio-kind" value="package">
+              Package
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio-kind" value="tags">
+              Tags
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section">
+      <div class="container">
+        <div class="subsection">
+          <div id="search-output" class="content"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

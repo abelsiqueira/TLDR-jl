@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "fuse.js": "^6.5.3"
+  },
+  "name": "julia-tldr-website",
+  "version": "1.0.0",
+  "description": "Site for TLDR.jl",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/style.scss css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "light-server": "light-server -s . -p 8080 -w \"js/*, index.html, css/*\"",
+    "start": "npm run light-server"
+  },
+  "author": "Abel Soares Siqueira",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
